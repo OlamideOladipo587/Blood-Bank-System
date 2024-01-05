@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <!-- bootstrap cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <!-- icons link -->
+    	<link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+      <script src="https://kit.fontawesome.com/6c1b22244e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/blood-bank.css">
+  </head>
+  <body>
+    <header>
+    <nav>
+        <h1>BBMS</h1>
+        <div class="menu">
+          <a href="/">Home</a>
+          <a href="/blood-bank">Blood Groups</a>
+          <a href="/donate">Donate Blood</a>
+          <a href="/request-admin" class="is-active">Blood Requests</a>
+          <a href="/logout">Logout</a>
+        </div>
+        <button class="hamburger">
+          <span class="material-icons">menu </span>
+        </button>
+    </nav>
+    <div class="mobile-menu">
+      <a href="#">Home</a>
+      <a href="/donate">Donate</a>
+      <a href="/request-admin">Blood Requests</a>
+      <a href="/">Logout</a>
+    </div>
+  </header>
+
+  <!-- Hospital Info Section -->
+  <!-- <section id="hospital-info">
+  <marquee width="100%" direction="right">
+
+  <div class="row">
+    <div class="col-lg-4">
+      <p><i class="fa-regular fa-hospital "></i>  Ogun State General Hospital</p>
+    </div>
+    <div class="col-lg-4">
+      <p><i class="fa-solid fa-location-dot "></i>  Abeokuta Ogun State Nigeria</p>
+    </div>
+    <div class="col-lg-4">
+      <p><i class="fa-solid fa-envelope"></i>  ogunstatehospital@gmail.com</p>
+    </div>
+  </div>
+  </marquee>
+  </section> -->
+  <section id="reports">
+      <p class="all-reports"><i>All blood requests will be shown here</i></p>
+  <div class="reports-div">
+    <div class="row reports-grid">
+      <div class="col">
+        <p class="name">Hospital</p>
+      </div>
+      <div class="col">
+        Blood Group
+      </div>
+      <div class="col">
+        Quantity
+      </div>
+      <div class="col">
+        Email
+      </div>
+      <div class="col">
+        Approve
+      </div>
+      <div class="col">
+        Reject
+      </div>
+    </div>
+
+    <% hos.forEach(function(user){ %>
+      <div class="row reports-grid">
+        <div class="col">
+            <p class="name"><%=user.hospital%></p>
+        </div>
+        <div class="col">
+          <p class="name"><%=user.blood_group%></p>
+        </div>
+        <div class="col">
+          <p class="name"><%=user.quantity%></p>
+        </div>
+        <div class="col">
+          <p class="name"><%=user.email%></p>
+        </div>
+        <div class="col">
+          <form class="approve" action="/approve" method="post">
+            <button type="submit" name="approve" class="b"><i class="fa-solid fa-check app" style="color:#5F9DF7"></i></button>
+          </form>
+        </div>
+        <div class="col">
+          <form class="reject" action="/reject" method="post">
+            <button type="submit" name="button" class="b"><i class="fa-solid fa-x rej" style="color:#5F9DF7"></i></button>
+          </form>
+        </div>
+      </div>
+    <% }) %>
+
+    <!-- <div class="col">
+      <form class="" action="/request-admin" method="post">
+
+          <button type="submit" name="approve" class="b" formaction="/approve"><i class="fa-solid fa-check app"></i></button>
+          <button type="submit" name="reject" class="b" formaction="/reject"><i class="fa-solid fa-x rej"></i></button>
+      </form>
+    </div> -->
+    <!-- <div class="col">
+        <button type="button" name="approve" class="approve b"><i class="fa-solid fa-check app"></i></button>
+    </div>
+    <div class="col">
+        <button type="button" name="button" class="reject b"><i class="fa-solid fa-x rej"></i></button>
+    </div> -->
+    <!-- <div class="col">
+      <form class="approve" action="/request-admin" method="post">
+        <button type="submit" name="approve" class="b"><i class="fa-solid fa-check app"></i></button>
+      </form>
+    </div>
+    <div class="col">
+      <form class="reject" action="/request-admin" method="post">
+        <button type="submit" name="button" class="b"><i class="fa-solid fa-x rej"></i></button>
+      </form>
+    </div> -->
+  </div>
+
+</section>
+
+  <!-- FOOTER -->
+  <section id="footer">
+    <div class="row">
+      <div class="col-lg-3">
+        <ul>
+          <li>
+            BBMS
+          </li>
+          <li>
+            Preserving the gift of life
+          </li>
+        </ul>
+      </div>
+      <div class="col-lg-3">
+        <ul>
+          <li>
+            <a href="/" >Home</a>
+          </li>
+          <li>
+            <a href="/donate">Donate</a>
+          </li>
+          <li>
+            <a href="/signup">Create Account</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-lg-3">
+        <ul>
+          <li>
+            <a href="#">Hospital</a>
+          </li>
+          <li>
+            <a href="#">Blood Bank</a>
+          </li>
+          <li>
+            <a href="/login">Login</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-lg-3">
+        <ul>
+          <li>
+            <a href="/">About Us</a>
+          </li>
+          <li>
+            <a href="/contact">Contact Us</a>
+          </li>
+          <li>
+            <a href="/">Services</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+      <div class="footer-line">
+        <!-- footer line -->
+      </div>
+      <div class="icons">
+        <i class="icon fa-brands fa-instagram "></i>
+        <i class="icon fa-brands fa-facebook faceboo "></i>
+        <i class="icon fa-brands fa-twitter "></i>
+        <i class="icon fa-brands fa-linkedin-in "></i>
+      </div>
+      <div class="rights">
+        <p>© 2024 BBMS Copyright | All Rights Reserved</p>
+        <!-- <a href="#" target="_blank">Terms and Conditions</a> -->
+      </div>
+  </section>
+
+
+    <!-- bootstrap script -->
+    <!-- <script src="/jquery/jquery.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="js/blood-bank.js"></script>
+  </body>
+</html>

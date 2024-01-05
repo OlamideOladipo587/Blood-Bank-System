@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <!-- bootstrap cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+
+    <!-- icons link -->
+    	<link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+      <script src="https://kit.fontawesome.com/6c1b22244e.js" crossorigin="anonymous"></script>
+      <link rel="stylesheet" href="css/login.css">
+  </head>
+  <body>
+    <div class="anime1">
+    <div class="login-div">
+      <p class="login-text">Login</p>
+      <a class="admin-text" href="/admin-login">Admin</a>
+      <!-- <a href="admin-login.html" target="_blank" class="admin-text">Admin?</a> -->
+      <p>Sign In to your account</p>
+      <form class="login-form" action="/login" method="post">
+        <div class="border">
+        <i class="fa-regular fa-user icons"></i> <input type="email" required placeholder="Email" class="form-inputs" name="email">
+        </div>
+        <div class="border">
+        <i class="fa-solid fa-lock icons"></i> <input type="password" required placeholder="Password" id="myInput" class="form-inputs" name="password">
+        </div>
+        <input class="show-password" type="checkbox" onclick="myFunction()">
+        <!-- <input type="checkbox" name="" value=""> -->
+        <label for="password" class="show-password">Show Password</label><br>
+        <input type="submit" name="Login" value="Login" class="login-button">
+        <a href="#" class="forgot-password">Forgot Password?</a> <br>
+        <a href="/signup" class="create-account">New here? Create an Account</a>
+      </form>
+    </div>
+    <div class="quote-div">
+      <p class="quote-div-headding">BLOOD BANK MANAGEMENT SYSTEM</p>
+      <p class="quote-text">Thank you for logging into our blood bank system. With this secure and easy-to-use platform, you can access a wealth of information and resources related to blood donations and requests.</p>
+      <button type="button" class="btn btn-primary home-btn">
+        <a class="nav-link " href="/"> <i class="fa-solid fa-house icon"></i> Home</a></button>
+    </div>
+    </div>
+
+    <!-- ADMIN LOGIN -->
+
+    <div class="anime2">
+      <div class="login-div">
+        <p class="login-text">Login</p>
+        <p>Sign In as an Admin</p>
+        <form class="login-form" action="/login" method="post">
+          <div class="border">
+          <i class="fa-regular fa-user icons"></i> <input type="email" required placeholder="Email" class="form-inputs">
+          </div>
+          <div class="border">
+          <i class="fa-solid fa-lock icons"></i> <input type="password" required placeholder="Password" id="myInput2" class="form-inputs">
+          </div>
+          <!-- <input type="checkbox" name="" value=""> -->
+          <input class="show-password" type="checkbox" onclick="myFunction()">
+          <label for="password" class="show-password">Show Password</label><br>
+          <input type="submit" name="Login" value="Login" class="login-button">
+          <a href="#" class="forgot-password">Forgot Password?</a>
+        </form>
+      </div>
+      <div class="quote-div2">
+        <p class="quote-div-headding2">BLOOD BANK MANAGEMENT SYSTEM</p>
+        <!-- <p class="quote-text2">Check how your families health is by professional team doctor with complete and modern facilites services lorem bshc sdhadb sdkhabh uye shyw hcbsi dsi hsis hqewi akh sdj hdu dhe.</p> -->
+        <p class="quote-text2">Thank you for logging into our blood bank system. With this secure and easy-to-use platform, you can access a wealth of information and resources related to blood donations and requests.</p>
+        <button type="button" class="btn btn-primary home-btn2">
+          <a class="nav-link " href="/"> <i class="fa-solid fa-house icon2"></i> Home</a></button>
+      </div>
+
+    </div>
+
+    <!-- bootstrap script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <!-- jQuery script -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <!-- javascript link -->
+    <script src="js/login.js"></script>
+  </body>
+</html>

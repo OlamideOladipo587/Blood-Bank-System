@@ -1,0 +1,109 @@
+body{
+  background-color: #ebedef;
+  padding: 3% 30%;
+  text-align: center;
+}
+.signup{
+  padding: 0;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 5px;
+}
+.signup-intro{
+  background-image: linear-gradient(to bottom right, rgb(0,66,130), #ACC0FE);
+  width: 506px;
+  height: 250px;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  padding: 10% 10%;
+  text-align: left;
+  color: #fff;
+}
+.welcome-heading{
+  font-size: 25px;
+  opacity: 5;
+  font-weight: bold;
+}
+.welcome-text{
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.signup-form-div{
+  text-align: left;
+  padding: 5% 10%;
+  width: 506px;
+  background-color: #fff;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  padding-left: 15%;
+}
+.create-account-text{
+  text-align: center;
+  font-size: 25px;
+  margin-left: -40px;
+}
+.icons{
+  padding: 10px;
+  background-color: #ebedef;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+.hospital-icon{
+  padding: 10px 6px;
+  background-color: #ebedef;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+.form-inputs{
+  padding: 4px 10px;
+  margin-left: -4px;
+  background-color: -internal-light-dark(rgb(232, 240, 254), rgba(70, 90, 126, 0.4)) !important;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border: 0;
+  transition: 2s;
+  width: 200px;
+
+}
+.form-inputs:focus{
+  width: 90%;
+}
+.border{
+  border: 1px solid #d8dbe0;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  width: 350px;
+  margin-bottom: 20px;
+}
+.border:focus{
+  width: 80%;
+}
+.show-password{
+  margin-bottom: 30px;
+}
+.create-account-button-div{
+  text-align: center;
+}
+.create-account-button{
+  padding: 8px 25px;
+  /* background-color: rgb(0,66,130); */
+  background-image: linear-gradient(to bottom right, rgb(0,66,130), #ACC0FE);
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+  margin-left: -40px;
+}
+.login{
+  font-size: 12px;
+  padding-top: 10px;
+  margin-left: -40px;
+  text-decoration: none;
+}
+
+@media (max-width: 768px){
+  body{
+    padding: 3% 1%;
+  }
+}

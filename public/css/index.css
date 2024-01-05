@@ -1,0 +1,387 @@
+@@import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/* NAVBAR */
+
+nav {
+	position: relative;
+	z-index: 99;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: 2px solid #5F9DF7;
+	color: #5F9DF7;
+	padding: 1rem 4rem;
+
+}
+
+nav h1 {
+	letter-spacing: 5px;
+	padding: 0.5rem 1rem;
+	padding-right: calc(1rem - 5px);
+  font-weight: bold;
+}
+
+
+.menu {
+	display: none;
+	align-items: center;
+	margin: 0 -1rem;
+}
+
+.menu a{
+  margin: 0 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.4s;
+  padding: 8px 12px;
+  border-radius: 99px;
+  color: #5F9DF7;
+}
+
+.menu a.is-active, .menu a:hover{
+  background-color: #5F9DF7;
+  color: #fff;
+}
+.hamburger {
+	appearance: none;
+	outline: none;
+	border: none;
+	background: none;
+	cursor: pointer;
+
+	display: block;
+	width: 2rem;
+	height: 2rem;
+}
+
+.hamburger span {
+	color: #5F9DF7;
+	font-size: 2rem;
+}
+
+.mobile-menu {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 98;
+
+	padding-top: 6rem;
+	opacity: 0;
+	transform: translateY(-100%);
+	background-color: #fff;
+	color: #FFF;
+	transition: 0.3s;
+}
+
+.mobile-menu.is-open {
+	opacity: 1;
+	transform: translateY(0);
+}
+
+.mobile-menu a {
+	display: block;
+	padding: 1rem;
+	color: #5F9DF7;
+	text-align: center;
+	text-decoration: none;
+	font-size: 1.25rem;
+	transition: 0.3s;
+}
+
+.mobile-menu a:hover {
+	color: #5F9DF7;
+	background-color: #FFF;
+}
+
+
+/* HOME */
+#home{
+  margin-bottom: 80px;
+}
+
+.home1, .home2{
+  margin: 5% 7%;
+}
+.wecare{
+  font-size: 3rem;
+  font-weight: bold;
+}
+.quote{
+  padding-top: 90px;
+  color: grey;
+}
+.pic-background{
+  background-color: #B4CDE6;
+  height: 400px;
+  padding-top: 10px;
+  padding-left: -55px;
+}
+.home-img{
+  background-image:url(../img/home1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 540px;
+  height: 400px;
+  display: inline-block;
+}
+.contact{
+  width: 400px;
+  height: 100px;
+  background-color: #083AA9;
+  display: inline-block;
+  margin-top: -60px;
+  margin-left: -45px;
+  padding: 20px 15px ;
+  margin-bottom: 10px;
+  color: #fff;
+  font-size: 15px;
+}
+.advantages{
+  color: #5F9DF7;
+  margin-top: 50px;
+  font-weight: bold;
+  font-size: 20px;
+}
+.icon-background{
+  background-color: #B4CDE6;
+  border-radius: 5px;
+  width: 55px;
+  height: 50px;
+  text-align: center;
+  padding-top: 8px;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+.advans{
+  display: inline-block;
+  font-weight: bold;
+  margin-bottom: 20px;
+  margin-left: 10px;
+}
+.ad-icon{
+  color: #5F9DF7;
+}
+
+
+/* Services Section */
+#services{
+  padding: 10% 7%;
+  text-align: center;
+}
+.card-row{
+  padding-left: 55px;
+}
+.services-headding{
+  margin-bottom: 7%;
+  margin-top: 5%;
+  font-size: 40px;
+  color: #5F9DF7;
+  font-weight: bold;
+}
+.services-subheaddings{
+  color: #5F9DF7;
+  font-weight: 600;
+}
+.card{
+  width: 300px;
+  box-shadow: -10px 10px 1px rgba(0,0,0,0.06);
+}
+.card-img{
+  width: 50%;
+  height: 60%;
+}
+.first-card-txt{
+  margin-bottom: 36px;
+}
+.card-btn{
+  border-radius: 99px;
+  background-color:  #5F9DF7;
+}
+
+/* About Us */
+#aboutus{
+  background-color: #ebedef;
+  padding: 10% 7%;
+}
+.about-img{
+  transition: 1s;
+}
+.about-blue-line{
+  width: 35px;
+  height: 2px;
+  background-color: blue;
+  display: inline-block;
+  margin-bottom: 5px;
+}
+.about-title{
+  font-size: 15px;
+  display: inline-block;
+  color: blue;
+}
+.about-text1{
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.about-img1{
+  width: 350px;
+  height: 300px;
+  margin-left: 50px;
+  display: inline-block;
+}
+.about-img2{
+  width: 220px;
+  height: 250px;
+  display: inline-block;
+  margin-top: -200px;
+  margin-left: -40px;
+}
+.about-img3{
+  width: 220px;
+  height: 250px;
+  display: inline-block;
+  margin-top: -280px;
+  margin-left: 300px;
+}
+.hover1{
+  transform: translatey(-50px);
+  transition: 1s;
+}
+/* .hover2{
+  transform: translatey(-50px);
+  transition: 1s;
+}
+.hover3{
+  transform: translatey(50px);
+  transition: 1s;
+} */
+.about-img:hover .about-img1:nth-child(1){
+  transform: translatey(-50px);
+  transition: 1s;
+}
+.about-img:hover .about-img2:nth-child(1){
+  transform: translatex(-50px);
+  transition: 1s;
+}
+.about-img:hover .about-img3:nth-child(1){
+  transform: translatex(50px);
+  transition: 1s;
+}
+
+.about-text2{
+  color: grey;
+  font-size: 14px;
+  width: 70%;
+}
+.appointment{
+  padding: 10px;
+  margin-top: 7%;
+  background-color: #083AA9;
+}
+
+/* FOOTER SECTION */
+#footer{
+  padding: 70px 70px 30px;
+}
+li{
+  list-style-type: none;
+  padding-bottom: 10px;
+}
+#footer a{
+  text-decoration: none;
+  color: #5F9DF7;
+}
+.footer-line{
+  height: 1px;
+  background-color: #5F9DF7;
+  margin-top: 20px;
+}
+.icons{
+  text-align: center;
+  padding-top: 60px;
+}
+.icon{
+  padding: 10px;
+  background-color: #fff;
+  color: #5F9DF7;
+  border-radius: 50%;
+  margin-right: 15px;
+  border: 2px solid #5F9DF7;
+}
+.icon:hover{
+  border: 2px solid #5F9DF7;
+  background-color: #5F9DF7;
+  color: #fff;
+  padding: 10px;
+}
+.rights{
+  text-align: center;
+  padding-top: 40px;
+  color: #5F9DF7;
+  font-size: 15px;
+}
+
+
+/* MEDIA SECTION */
+
+@media (min-width: 768px) {
+	.mobile-menu, .hamburger {
+		display: none;
+	 }
+
+	.menu {
+		display: flex;
+    }
+	}
+
+@media (max-width: 768px){
+  .home-img{
+    width: 315px;
+  }
+  .about-img1{
+    width: 50px;
+    visibility: hidden;
+  }
+  .about-img2{
+    width: 50px;
+    visibility: hidden;
+  }
+  .about-img3{
+    width: 100%;
+    margin-left: -1px;
+    text-align: center;
+  }
+  .mobile-menu{
+    width: 100%;
+  }
+  .about-img:hover .about-img3:nth-child(1){
+    transform: none;
+    transition: 0s;
+  }
+  body{
+    text-align: center;
+  }
+  .advantage-div{
+    text-align: left;
+  }
+  .card-row{
+    padding-left: 0;
+  }
+  .cardd{
+    margin-bottom: 30px;
+  }
+  .card{
+    width: 100%;
+  }
+  .about-text2{
+    width: 100%;
+  }
+}
