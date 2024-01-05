@@ -54,7 +54,6 @@ app.set("view engine", "ejs");
 // app.use(passport.session());
 
 // connect to database
-// mongoose.connect("mongodb+srv://bloodbankms1:bloodms1@bbms.77ztf1f.mongodb.net/?retryWrites=true&w=majority")
 // mongoose.connect(process.env.MONGODB_URI)
 mongoose.connect(process.env.MONGODB_URI, { useNewUrlParser: true, useUnifiedTopology: true });
 
@@ -411,7 +410,7 @@ main().catch(console.error);
 res.redirect("/request-admin")
 });
 
-// Listen on port 3000
+// Listen on port 8080
 // app.listen(8080, function() {
 //   console.log("Server 8080 started");
 // });
