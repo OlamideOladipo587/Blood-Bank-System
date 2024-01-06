@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node custom-server.js"
   },
-  "author": "Bisola Oladipo",
+  "author": "Olamide Oladipo",
   "license": "ISC",
   "engines": {
     "node": "16.x"
